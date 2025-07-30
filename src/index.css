@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Center yet-another-react-lightbox modal and content */
+.yarl__root {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(10, 10, 10, 0.98) !important;
+  backdrop-filter: blur(2px);
+}
+.yarl__container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #18181b !important;
+}
+.yarl__slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  /* Remove all transitions for instant, clean image change */
+  transition: none !important;
+}
+.yarl__slide_image {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  max-height: 80vh;
+  max-width: 90vw;
+  object-fit: contain;
+  background: #222;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.yarl__slide_image:active, .yarl__slide_image:focus {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  transform: scale(0.98);
+}
+.yarl__thumbnails_container {
+  justify-content: center !important;
+  background: transparent !important;
+  padding-top: 16px;
+}
+.yarl__thumbnails_thumbnail {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border: 2px solid transparent;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+.yarl__thumbnails_thumbnail--active {
+  border-color: #f59e42;
+  box-shadow: 0 4px 16px rgba(245,158,66,0.15);
+}

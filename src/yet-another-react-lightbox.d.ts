@@ -1,0 +1,3 @@
+declare module 'yet-another-react-lightbox';
+declare module 'yet-another-react-lightbox/plugins/captions';
+declare module 'yet-another-react-lightbox/plugins/thumbnails';
